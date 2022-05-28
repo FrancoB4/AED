@@ -94,7 +94,7 @@ def menu(nombre_jugador, monto):
         mayor_perdida = 0
     monto_max = acumulado
 
-    # Se muestran las ociones del menu
+    # Se muestran las opciones del menu
     opcion = mostrar_opciones()
 
     # Se ejecutará siempre mientras el usuario no ingrese la opcion de salir del juego
@@ -149,7 +149,7 @@ def menu(nombre_jugador, monto):
                 for _ in range(2):
                     mano_jugador, puntos_jugador = dar_carta(mano_jugador, VALORES, PALOS, FIGURAS, puntos_jugador)
 
-                # Se define si existió Nlack Jack natural
+                # Se define si existió BlackJack natural
                 if puntos_jugador == 21:
                     bj_natural = True
                     manos_bj_natural += 1
@@ -169,7 +169,7 @@ def menu(nombre_jugador, monto):
                 while otra_carta == 's' or otra_carta == 'S':
                     mano_jugador, puntos_jugador = dar_carta(mano_jugador, VALORES, PALOS, FIGURAS, puntos_jugador)
 
-                    # Si el jugador se pasa o consigue 21 puntos, no puede pedir mas cartas
+                    # Si el jugador se pasa o consigue 21 puntos, no puede pedir más cartas
                     if puntos_jugador > 21:
                         print('Te has pasado de 21 puntos.')
                         puntos_jugador = 0
@@ -187,7 +187,7 @@ def menu(nombre_jugador, monto):
                     mano_crupier, puntos_crupier = dar_carta(mano_crupier, VALORES, PALOS, FIGURAS,
                                                              puntos_crupier)
 
-                    # En su segunda carta, se verifica si hay Black Jack natural
+                    # En su segunda carta, se verifica si hay BlackJack natural
                     if puntos_jugador == 21 and len(mano_jugador) == 2:
                         bj_natural_crupier = True
                     elif puntos_crupier > 21:
@@ -255,7 +255,7 @@ def menu(nombre_jugador, monto):
             # Se muestran los datos solicitados
             print(f'El porcentaje de victorias del jugador fué de: {porcentaje_victorias}%')
             print(f'La mayor racha de victorias fue: {racha_mas_larga}')
-            print(f'La cantidad de manso con BlackJack natural fue: {manos_bj_natural}')
+            print(f'La cantidad de manos con BlackJack natural fue: {manos_bj_natural}')
             print(f'El mayor monto alcanzado por el jugador fue: {monto_max}')
             print(f'El promedio de los montos apostados fue: {prom_apuestas}')
             print(f'La mayor perdida del jugador fue de: {mayor_perdida}')
