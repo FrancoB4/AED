@@ -26,6 +26,7 @@ def main():
     impar = impar_par = five = False
 
     for char in sequence:
+        cant_num += 1
         num = int(char)
 
         if n1 < num < n2:
@@ -40,7 +41,7 @@ def main():
 
         if num == 5 and not five:
             five = True
-        elif five and num == five:
+        elif five and num == 5:
             cant_five += 1
             five = False
         else:
@@ -48,10 +49,10 @@ def main():
 
     porcentaje = percentage(may_n1_men_n2, cant_num)
 
-    print(f'Mayores que {n1} y menores que {n2}:    | {may_n1_men_n2}')
-    print(f'Porcentaje may {n1} y men {n2}:         | {porcentaje}')
+    print(f'Mayores que {n1} y menores que {n2}:        | {may_n1_men_n2}')
+    print(f'Porcentaje may {n1} y men {n2}:             | {porcentaje}')
     print(f'Impares seguidos por pares:             | {impar_par}')
-    print(f'Doble cincos en la secuencia:           | {cant_five}')
+    print(f'Cantidad doble cinco en la secuencia:   | {cant_five}')
 
 
 if __name__ == '__main__':

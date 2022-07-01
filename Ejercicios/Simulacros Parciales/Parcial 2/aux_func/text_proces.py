@@ -1,8 +1,3 @@
-"""
-
-"""
-
-
 def average(count, division):
     if division != 0:
         return round(count / division, 2)

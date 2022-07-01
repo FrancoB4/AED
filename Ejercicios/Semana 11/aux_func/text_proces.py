@@ -1,8 +1,3 @@
-"""
-
-"""
-
-
 def average(count, division):
     if division != 0:
         return round(count / division, 2)
@@ -29,7 +24,3 @@ def is_alphabetical(char):
 
 def is_vocal(char):
     return char in 'aeiou'
-
-
-def is_consonant(char):
-    return char in 'qwrtypsdfghjklñzxcvbnm'
