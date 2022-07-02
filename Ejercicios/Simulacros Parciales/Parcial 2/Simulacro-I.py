@@ -22,7 +22,7 @@ está entre las tres primeras posiciones.
 4 - Determinar la cantidad de palabras que contienen la expresión "se" (con cualquiera de sus letras en minúscula o
 en mayúscula) pero de forma que la palabra NO COMIENCE con esa expresión. Por ejemplo en el texto: “Se separa y pasea
 para moverse un poco.“, las palabras “pasea” y “moverse” cumplen con la condición. Notar que "Se" y "separa"
-contienen “se” pero ambas comienzan con "se" y por lo tanto no deben ser contadas. """
+contienen “se” pero ambas comienzan con "se" y, por lo tanto, no deben ser contadas. """
 from aux_func.text_proces import *
 
 

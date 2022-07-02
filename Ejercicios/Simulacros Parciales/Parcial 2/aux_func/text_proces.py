@@ -23,7 +23,7 @@ def is_alphabetical(char):
 
 
 def is_vocal(char):
-    return char in 'aeiou'
+    return char in 'aeiouáéíóú'
 
 
 def is_consonant(char):
